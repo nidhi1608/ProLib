@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.prolific.prolib.activities.BookListActivity" >
+
+    <item
+        android:id="@+id/miAddBook"
+        android:icon="@drawable/ic_add"
+        android:onClick="onAddBook"
+        android:showAsAction="always"
+        android:title="@string/miAddBook">
+    </item>
+
+    <item
+        android:id="@+id/miShowAuthorList"
+        android:icon="@drawable/ic_authorlist"
+        android:onClick="onShowAuthorList"
+        android:showAsAction="always"
+        android:title="@string/miShowAuthorList">
+    </item>
+
+</menu>

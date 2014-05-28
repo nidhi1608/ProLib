@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/view_empty_list"
+    android:visibility="gone">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/ic_no_books"
+        android:paddingBottom="40dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/tvNoBooks"
+        style="@style/TextViewThin"
+        android:text="No books in Library"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-50dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:textSize="22sp" />
+    <TextView
+        android:id="@+id/tvNoBooksMessage"
+        style="@style/TextViewThin"
+        android:text="Add a book first using the\n+ icon on the top right"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNoBooks"
+        android:layout_centerHorizontal="true"
+        android:textSize="14sp" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.prolific.prolib.activities.AddBookActivity" >
+
+    <item
+        android:id="@+id/miDone"
+        android:onClick="onDonePress"
+        android:showAsAction="always"
+        android:title="@string/miDone">
+    </item>
+</menu>

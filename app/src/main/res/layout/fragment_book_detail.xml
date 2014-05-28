@@ -1,0 +1,103 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.prolific.prolib.activities.BookDetailActivity$PlaceholderFragment">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/TextViewThin"
+        android:text="Lorem ipsum dolor sit amet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/tvAuthor"
+        style="@style/TextViewThin"
+        android:text="Firstname Lastname"
+        android:textColor="@android:color/darker_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="32sp" />
+
+    <LinearLayout
+        android:id="@+id/llCategories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAuthor"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvPublisherTitle"
+        style="@style/TextViewThin"
+        android:text="@string/publisher"
+        android:textColor="@android:color/darker_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llCategories"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/tvPublisher"
+        style="@style/TextViewThin"
+        android:text="Packet Publishing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPublisherTitle"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/tvCheckedoutTitle"
+        style="@style/TextViewThin"
+        android:text="@string/last_checkout"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPublisher"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/tvCheckedout"
+        style="@style/TextViewThin"
+        android:text="Michele @ June 3rd 2013, 1:45pm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvCheckedoutTitle"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/btnCheckout"
+        style="@style/Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/tvCheckedout"
+        android:text="@string/btnCheckout" />
+
+</RelativeLayout>
+</ScrollView>
